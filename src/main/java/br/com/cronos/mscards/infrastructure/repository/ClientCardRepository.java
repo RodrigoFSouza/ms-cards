@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ClientCardRepository extends JpaRepository<Card, Long> {
+public interface ClientCardRepository extends JpaRepository<ClientCard, Long> {
 
     List<ClientCard> findByCpf(String cpf);
 }

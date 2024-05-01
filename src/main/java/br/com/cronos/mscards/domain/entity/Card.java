@@ -24,6 +24,7 @@ public class Card {
     private FlagCard flagCard;
 
     private BigDecimal income;
+    @Column(name = "`limit`")
     private BigDecimal limit;
 
     public Card(String name, FlagCard flagCard, BigDecimal income, BigDecimal limit) {
